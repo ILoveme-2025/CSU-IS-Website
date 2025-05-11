@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | CSU IS Department</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Department Logo" id="logo"/>
+    <h1>Information Systems Department, Monte Ahuja Business College</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="degrees.html">Degree Programs</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h2>Get in Touch</h2>
+      <p>We’re here to answer your questions. Reach out to us below.</p>
+    </section>
+
+    <section class="contact-form">
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+
+    <section class="contact-info">
+      <h3>Department Contact Information</h3>
+      <p><strong>Address:</strong> BU344, 1864 E. 18th St., Cleveland, OH 44115</p>
+      <p><strong>Email:</strong> <a href="mailto:information_systems@csuohio.edu">information_systems@csuohio.edu</a></p>
+      <p><strong>Phone:</strong> 216-687-4760</p>
+      <p><strong>Web Master:</strong> Your Name</p>
+    </section>
+
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.867447595753!2d-81.67633928459293!3d41.50245867925316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fb7924311fcd%3A0x10d2b2f1dbe182c2!2sMonte%20Ahuja%20College%20of%20Business!5e0!3m2!1sen!2sus!4v1621234567890"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cleveland State University - Information Systems Department</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const status = document.getElementById("form-status");
+
+      if (!name || !email || !message) {
+        status.textContent = "Please fill out all fields.";
+        status.style.color = "red";
+      } else {
+        status.textContent = "Message submitted successfully!";
+        status.style.color = "green";
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>
+

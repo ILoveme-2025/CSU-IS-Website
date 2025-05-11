@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses | CSU IS Department</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Department Logo" id="logo"/>
+    <h1>Information Systems Department, Monte Ahuja Business College</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="degrees.html">Degree Programs</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h2>Core & Elective Courses</h2>
+      <p>Explore our curriculum, which includes foundational and advanced topics in information systems, security, AI, and web development.</p>
+    </section>
+
+    <section class="course-section">
+      <h3>Core Courses</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Credits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IST 101</td>
+            <td>Introduction to Information Systems</td>
+            <td>Overview of IS concepts, technology, and business applications.</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IST 201</td>
+            <td>Principles of Programming</td>
+            <td>Intro to programming logic, syntax, and application development.</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IST 310</td>
+            <td>Database Management Systems</td>
+            <td>Design and management of relational databases and SQL.</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IST 315</td>
+            <td>Cloud Computing</td>
+            <td>Study of cloud platforms, services, and deployment models.</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IST 400</td>
+            <td>Cybersecurity Fundamentals</td>
+            <td>Introduction to information security principles and practices.</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="course-section">
+      <h3>Elective Courses</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Credits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IST 420</td>
+            <td>AI and Machine Learning</td>
+            <td>Techniques and tools for artificial intelligence and ML applications.</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IST 430</td>
+            <td>Blockchain Technology</td>
+            <td>Study of blockchain, smart contracts, and distributed systems.</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IST 450</td>
+            <td>Web Development</td>
+            <td>Front-end and back-end development for modern web applications.</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="course-images">
+      <img src="webdev.jpg" alt="Web development screenshot" />
+      <img src="database.jpg" alt="Database schema" />
+      <img src="cybersecurity.jpg" alt="Cybersecurity icon" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cleveland State University - Information Systems Department</p>
+  </footer>
+</body>
+</html>
+
